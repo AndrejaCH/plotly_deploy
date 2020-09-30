@@ -7,7 +7,10 @@ body {
   .jumbotron {
     background-image: url('../images/lab.jpg');
     background-size: 100% 100%;
+    opacity: 0.5;
     text-align: center;
+    color: aqua;
+    
   } 
 
   .well {
