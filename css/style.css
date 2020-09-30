@@ -1,0 +1,16 @@
+body {
+
+    color: #000000;
+    font-style: Verdana;
+  }
+
+  .jumbotron {
+    background-image: url('../images/lab.jpg');
+    background-size: 100% 100%;
+    text-align: center;
+  } 
+
+  .well {
+background-color: azure;
+
+  }
