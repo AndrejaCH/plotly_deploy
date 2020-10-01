@@ -71,11 +71,11 @@ function buildCharts(sample) {
     // 6. Create variables that hold the otu_ids, otu_labels, and sample_values.
     // otu_ids
     var otuIds = resultForSample.otu_ids
-    var otuIdsSlice = otuIds.slice(0,10).map(otuid => `OTU ${otuid}`).reverse();
+    var otuIdsSliced = otuIds.slice(0,10).map(otuId => `OTU ${otuId}`).reverse();
     //var otuIds = otuIds1.sort((a,b) => 
     //a.otu_ids - b.otu_ids).slice(0,10);
     //console.log(otuIdsSlice.map(`OTU ${otuIds}`)
-    console.log(otuIdsSlice)
+    console.log(otuIdsSliced)
 
     //otu_labels // add hover-over labes, check the order if correct
     var otuLables = resultForSample.otu_labels;
@@ -96,10 +96,8 @@ function buildCharts(sample) {
     // Hint: Get the the top 10 otu_ids and map them in descending order  
     //  so the otu_ids with the most bacteria are last. 
 
-    var yticks =  {
-    };
-
-
+    //var yticks =  {
+    //};
     // var yticks =  {
     //   tickmode: 'array',
     //   nticks: 0,
@@ -110,53 +108,67 @@ function buildCharts(sample) {
     // 8. Create the trace for the bar chart. 
     var barData = [{
       x: sampleValuesSliced,
-      y: otuIdsSlice, //(`OTU ${otuIds}`)
+      y: otuIdsSliced, //(`OTU ${otuIds}`)
       text: otuLablesSliced,
       type: "bar",
       orientation: 'h'
     }];
+    
+
 
     // 9. Create the layout for the bar chart. 
     var barLayout = {
       title: "Top 10 Bacteria Cultures Found",
       xaxis: {title: "Frekvency"},
-      yaxis: {title: "Type of Bacteria",
+      yaxis: {title: "Type of Bacteria"},
       //showticklabels: true,
       //tickangle: 45,
       //autotick: true,
       //ticklen: 0,
-      yticks: yticks
-    },
+      //yticks: yticks
+    
      
      
     };
     // 10. Use Plotly to plot the data with the layout. 
     Plotly.newPlot("bar", barData, barLayout);
-  });
+
+
+
+//////////////////////////////////////////////// deliverable2 ///////////////////////////////////////
+// d3 select - why do we need d3 select here?
+//var bubbleChart = d3.select('#row').node().value
+
+
+  //1. Create the trace for the bubble chart.
+  var bubbleData = [{
+    x: otuIds,
+    y: sampleValues,
+    text: otuLables,
+    mode: "markers",
+    marker: {
+      size: sampleValues,
+      color: otuIds,
+      colorscale: 'blues',
+      hovermode: 'blues',
+      margins: '',
+    }
+    
+  }];
+
+  
+  // 2. Create the layout for the bubble chart.
+  var bubbleLayout = {
+    title: "Bacteria Cultures per Sample",
+    xaxis: {title: "OTU ID"},
+    yaxis: {title: "Frekvency"}
+  };
+
+  // 3. Use Plotly to plot the data with the layout.
+  Plotly.newPlot("bubble", bubbleData, bubbleLayout);
+
+});
 }
-
-// //////////////////////////////////////////////// deliverable2 ///////////////////////////////////////
-// 1. Create the trace for the bubble chart.
-// var bubbleData = [{
-//   x: otuIds,
-//   y: sampleValues,
-//   mode: "markers",
-//   marker: {
-//     size: [40, 60, 80, 100]
-//   }
-
-// }];
-
-// // 2. Create the layout for the bubble chart.
-// var bubbleLayout = {
-//   title: "Bacteria Cultures per Sample",
-//   xaxis: {title: "OTU ID"},
-//   yaxis: {title: "Frekvency"}
-// };
-
-// 3. Use Plotly to plot the data with the layout.
-// Plotly.newPlot("bubble", bubbleData, bubbleLayout);
-
 
 // ///////////////////////////////////////////////////// deliverable 3 ////////////////////////////////////
 // // 4. Create the trace for the gauge chart.
