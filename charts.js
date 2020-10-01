@@ -62,6 +62,7 @@ function buildCharts(sample) {
     var samples = data.samples;
     // 4. Create a variable that filters the samples for the object with the desired sample number.
     var resultSample = samples.filter(sampleObj => sampleObj.id == sample);
+    console.log(resultSample);
     
     //  5. Create a variable that holds the first sample in the array.
     var resultForSample = resultSample[0];
@@ -69,38 +70,48 @@ function buildCharts(sample) {
 
     // 6. Create variables that hold the otu_ids, otu_labels, and sample_values.
     // otu_ids
-    var otuIds1 = resultForSample.otu_ids;
-    var otuIds = otuIds1.sort((a,b) => 
-    a.otu_ids - b.otu_ids).slice(0,10);
-    console.log(otuIds)
+    var otuIds = resultForSample.otu_ids
+    var otuIdsSlice = otuIds.slice(0,10).map(otuid => `OTU ${otuid}`).reverse();
+    //var otuIds = otuIds1.sort((a,b) => 
+    //a.otu_ids - b.otu_ids).slice(0,10);
+    //console.log(otuIdsSlice.map(`OTU ${otuIds}`)
+    console.log(otuIdsSlice)
 
-    //otu_labels // add hover-over labess, check the order if correct
-    var otuLables1 = resultForSample.otu_labels;
-    var otuLables = otuLables1.sort((a,b) => 
-    a.sample_values - b.sample_values).slice(0,10);
-    console.log(otuLables);
+    //otu_labels // add hover-over labes, check the order if correct
+    var otuLables = resultForSample.otu_labels;
+    var otuLablesSliced = otuLables.slice(0,10).reverse();
+    //var otuLables = otuLables1.sort((a,b) => 
+    //a.sample_values - b.sample_values).slice(0,10);
+    console.log(otuLablesSliced);
 
     //otu_values
-    var sampleValues1 = resultForSample.sample_values;
-    var sampleValues = sampleValues1.sort((a,b) => 
-    a.sample_values - b.sample_values).slice(0,10);
-    console.log(sampleValues);
+    var sampleValues = resultForSample.sample_values;
+    var sampleValuesSliced = sampleValues.slice(0,10).reverse();
+
+    //var sampleValues = sampleValues1.sort((a,b) => 
+    //a.sample_values - b.sample_values).slice(0,10);
+    console.log(sampleValuesSliced);
 
     // 7. Create the yticks for the bar chart.
     // Hint: Get the the top 10 otu_ids and map them in descending order  
     //  so the otu_ids with the most bacteria are last. 
 
-    var yticks = {
-      tickmode: 'array',
-      nticks: 0,
-      tickprefix:  (`OTU ${otuIds}`)
-
+    var yticks =  {
     };
+
+
+    // var yticks =  {
+    //   tickmode: 'array',
+    //   nticks: 0,
+    //   tickprefix:  (`OTU ${otuIds}`)
+
+    // };
 
     // 8. Create the trace for the bar chart. 
     var barData = [{
-      x: sampleValues,
-      y: otuIds,
+      x: sampleValuesSliced,
+      y: otuIdsSlice, //(`OTU ${otuIds}`)
+      text: otuLablesSliced,
       type: "bar",
       orientation: 'h'
     }];
@@ -110,13 +121,13 @@ function buildCharts(sample) {
       title: "Top 10 Bacteria Cultures Found",
       xaxis: {title: "Frekvency"},
       yaxis: {title: "Type of Bacteria",
-      showticklabels: true,
-      tickangle: 45,
-      autotick: true,
-      ticklen: 0,
-
-    },
+      //showticklabels: true,
+      //tickangle: 45,
+      //autotick: true,
+      //ticklen: 0,
       yticks: yticks
+    },
+     
      
     };
     // 10. Use Plotly to plot the data with the layout. 
@@ -124,12 +135,15 @@ function buildCharts(sample) {
   });
 }
 
-////////////////////////////////////////////////// deliverable2 ///////////////////////////////////////
-// //1. Create the trace for the bubble chart.
+// //////////////////////////////////////////////// deliverable2 ///////////////////////////////////////
+// 1. Create the trace for the bubble chart.
 // var bubbleData = [{
-//   x: sampleValues,
-//   y: otuIds,
+//   x: otuIds,
+//   y: sampleValues,
 //   mode: "markers",
+//   marker: {
+//     size: [40, 60, 80, 100]
+//   }
 
 // }];
 
@@ -137,12 +151,12 @@ function buildCharts(sample) {
 // var bubbleLayout = {
 //   title: "Bacteria Cultures per Sample",
 //   xaxis: {title: "OTU ID"},
-//   yaxis: {title: "Frekvency"
-// }
-
-// //3. Use Plotly to plot the data with the layout.
-// Plotly.newPlot("bubble", bubbleData, bubbleLayout);
+//   yaxis: {title: "Frekvency"}
 // };
+
+// 3. Use Plotly to plot the data with the layout.
+// Plotly.newPlot("bubble", bubbleData, bubbleLayout);
+
 
 // ///////////////////////////////////////////////////// deliverable 3 ////////////////////////////////////
 // // 4. Create the trace for the gauge chart.
