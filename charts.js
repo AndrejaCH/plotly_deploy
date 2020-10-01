@@ -167,21 +167,58 @@ function buildCharts(sample) {
   // 3. Use Plotly to plot the data with the layout.
   Plotly.newPlot("bubble", bubbleData, bubbleLayout);
 
-});
-}
+
 
 // ///////////////////////////////////////////////////// deliverable 3 ////////////////////////////////////
-// // 4. Create the trace for the gauge chart.
-// var gaugeData = [
+// step: 1-3initialize variables that hold arrays for the sample 
+//that is selected from the dropdown menu on the webpage
+var metadata = data.metadata;
+// Filter the data for the object with the desired sample number
+var resultArray = metadata.filter(sampleObj => sampleObj.id == sample);
+console.log(resultArray);
+
+var result = resultArray[0];
+console.log(result);
+
+//initialize variables and convert to a float
+var wFreq = result.wfreq
+var wFreqFloat = parseFloat(wFreq).toFixed( 2 )
+console.log(wFreqFloat) //parseFloat(num).toFixed( 2 )
+
+
+// 4. Create the trace for the gauge chart.
+var gaugeData = [{
+  title: {text: "Scrubs per Week", font: { size: 18 }},
+  type: "indicator",
+  mode: "gauge+number",
+  value: wFreq,
+  delta: { reference: 2},
+  gauge: {
+    axis: { range: [null, 10] },
+    bar: { color: "black" },
+    bgcolor: "white",
+    borderwidth: 2,
+    bordercolor: "gray",
+    steps: [
+      { range: [0, 2], color: "red" },
+      { range: [2, 4], color: "orange" },
+      { range: [4, 6], color: "yellow" },
+      { range: [6, 8], color: "green" },
+      { range: [8, 10], color: "darkgreen" },
+    ]},
+
+  //color of the gauge = "black"
+  //Assign different colors as string values in increments of 2
+
      
-// ];
+}];
 
-// // // 5. Create the layout for the gauge chart.
-// var gaugeLayout = { 
- 
-// };
+// // 5. Create the layout for the gauge chart.
+var gaugeLayout = { 
+  title: "Belly Button Washing Frequency"
+};
 
-// // // 6. Use Plotly to plot the gauge data and layout.
-// Plotly.newPlot("gauge", gaugeData, gaugeLayout)
-// });
-// }
+// // 6. Use Plotly to plot the gauge data and layout.
+Plotly.newPlot("gauge", gaugeData, gaugeLayout)
+});
+}
