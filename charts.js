@@ -91,14 +91,16 @@ function buildCharts(sample) {
       y: otuIdsSliced, //(`OTU ${otuIds}`)
       text: otuLablesSliced,
       type: "bar",
-      orientation: 'h'
+      orientation: 'h',
+      marker: {
+        color: 'rgb(158,202,225)',
+        opacity: 0.8,}
     }];
     
     // 9. Create the layout for the bar chart. 
     var barLayout = {
       title: "Top 10 Bacteria Cultures Found",
-      titlefont: {
-        "size": 25},
+      titlefont: {"size": 25},
     };
     
     // 10. Use Plotly to plot the data with the layout. 
@@ -114,9 +116,7 @@ function buildCharts(sample) {
       marker: {
         size: sampleValues,
         color: otuIds,
-        colorscale: 'Earth',
-        hovermode: 'blues',
-        margins: '',
+        colorscale: 'RdBu',
       }
       
     }];
@@ -126,7 +126,9 @@ function buildCharts(sample) {
       title: "Bacteria Cultures per Sample",
       xaxis: {title: "OTU ID"},
       titlefont: {
-        "size": 25}
+        "size": 25},
+      hovermode: "closest",
+      height: 500
     };
 
     // 3. Use Plotly to plot the data with the layout.
@@ -162,9 +164,9 @@ function buildCharts(sample) {
         borderwidth: 2,
         bordercolor: "gray",
         steps: [
-          { range: [0, 2], color: "floralwhite" },
-          { range: [2, 4], color: "lavender" },
-          { range: [4, 6], color: "thistle" },
+          { range: [0, 2], color: "floralwhite"},
+          { range: [2, 4], color: "lavender"},
+          { range: [4, 6], color: "thistle"},
           { range: [6, 8], color: "mediumslateblue" },
           { range: [8, 10], color: "royalblue" },
         ]},

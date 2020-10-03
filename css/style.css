@@ -10,42 +10,44 @@ body {
     opacity: 0.7;
     text-align: center;
     color: aliceblue;
+    /* text-shadow: 3px 3px 8px whitesmoke; */
     
   } 
 
   .well {
 background-color: aliceblue;
 font-family: Verdana;
-font-weight: 80;
+font-weight: 90;
 font-size: smaller;
 
 
   }
 
   .panel {
-background-color: aliceblue;
-font-family: Verdana;
-font-weight: 90;
+    background-color: aliceblue;
+    font-family: Verdana;
+    font-weight: 90;
+    
+      }
 
-  }
 
 #know {
   font-family: Verdana;
-  font-weight: 80;
-  font-size: smaller;
+  font-weight: 90;
+  font-size: medium;
   background-color: whitesmoke;
 }
 
 #otu {
   font-family: Verdana;
-  font-weight: 80;
-  font-size: smaller;
+  font-weight: 90;
+  font-size: medium;
   background-color: whitesmoke;
 }
 
 #scrub{
   font-family: Verdana;
-  font-weight: 80;
-  font-size: smaller;
+  font-weight: 90;
+  font-size: medium;
   background-color: whitesmoke;
 }
