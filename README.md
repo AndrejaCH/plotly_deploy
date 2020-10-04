@@ -5,7 +5,7 @@
 ## Overview of Project
 ## Purpose
 
-For this project I am creating an **interactive dashboard**, a creative visualization that enables communicate findings by offering interactivity which can help the audience better understand the data and draw the same conclusions as a researchers and data analysists. 
+For this project I am creating an **interactive dashboard**, a creative visualization that enables communication by offering interactivity which can help the audience better understand the data and draw the same conclusions as researchers and data analysts. 
 The purpose of this research is to **gather, identify and analyze biological footprint of individuals’ navels**. 
 
 The research holds data of 153 individuals and their: 
@@ -20,11 +20,11 @@ The research holds data of 153 individuals and their:
 
 
 ## Background 
-Identify bacterial species that have the **ability to synthesize proteins that taste like beef** (so far laboratories had success in synthesizing meat from algae, fungi and microorganisms found on plat roots) and there is a good chance to find the right bacteria species on humans’ bodies as well (1).
+Identify bacterial species that have the **ability to synthesize proteins that taste like beef** (so far laboratories had success in synthesizing meat from algae, fungi and microorganisms found on plat roots) and there is a good chance to find the right bacteria species on human bodies as well (1).
 
-Moreover, scientists could use those new samples to start testing the **correlation of the navel dwellers** with everything from subjects' places of birth to the **makeups of their immune systems**. Making such connections could help discover the **ties between bacterial hosts and their effects on individual’s health**. Researchers believe that **microbes are involved in everything from immune function to acne to skin softness**. The potential boon to medicine is enormous, so lets the exploration begins (2).
+Moreover, scientists could use those new samples to start testing the **correlation of the navel dwellers** with everything from subjects' places of birth to the **makeups of their immune systems**. Making such connections could help discover the **ties between bacterial hosts and their effects on individual’s health**. Researchers believe that **microbes are involved in everything from immune function to acne to skin softness**. The potential boon to medicine is enormous, so let the exploration begin (2).
 
-The individual can find one’s information by **selecting unique ID form a drop-down menu** and explore data by deep dive in their own results and also compare to others individuals. **This research is public and easily accessible**, so anyone can learn more about bellybutton biodiversity and explore this fascinating field. The interactive dashboard can be found in the link that follows:
+The individual can find one’s information by **selecting unique ID from a drop-down menu** and explore data by deep dive in their own results and also compare to other individuals. **This research is public and easily accessible**, so anyone can learn more about bellybutton biodiversity and explore this fascinating field. The interactive dashboard can be found in the link that follows:
 <br>
 <br>
 <p align="center">
