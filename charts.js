@@ -88,7 +88,7 @@ function buildCharts(sample) {
     // 8. Create the trace for the bar chart. 
     var barData = [{
       x: sampleValuesSliced,
-      y: otuIdsSliced, //(`OTU ${otuIds}`)
+      y: otuIdsSliced,
       text: otuLablesSliced,
       type: "bar",
       orientation: 'h',
@@ -101,6 +101,7 @@ function buildCharts(sample) {
     var barLayout = {
       title: "Top 10 Bacteria Cultures Found",
       titlefont: {"size": 25},
+      xaxis: {title: "Sample Value"}
     };
     
     // 10. Use Plotly to plot the data with the layout. 
@@ -125,8 +126,8 @@ function buildCharts(sample) {
     var bubbleLayout = {
       title: "Bacteria Cultures per Sample",
       xaxis: {title: "OTU ID"},
-      titlefont: {
-        "size": 25},
+      yaxis: {title: "Sample Value"},
+      titlefont: {"size": 25},
       hovermode: "closest",
       height: 500
     };
@@ -152,11 +153,10 @@ function buildCharts(sample) {
 
     // 4. Create the trace for the gauge chart.
     var gaugeData = [{
-      title: {text: "Scrubs per Week", font: {size: 16}},
+      title: {text: "Scrubs per Week", font: {size: 18}},
       type: "indicator",
       mode: "gauge+number",
       value: wFreq,
-      delta: { reference: 2},
       gauge: {
         axis: { range: [null, 10] },
         bar: { color: "firebrick" },
@@ -175,8 +175,7 @@ function buildCharts(sample) {
     // 5. Create the layout for the gauge chart.
     var gaugeLayout = { 
       title: "Belly Button Washing Frequency",
-      titlefont: {
-        "size": 25}
+      titlefont: {"size": 25}
     };
 
     // 6. Use Plotly to plot the gauge data and layout.
