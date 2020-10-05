@@ -24,7 +24,7 @@ One of the reasons for this research is to identify bacterial species that have 
 
 Moreover, scientists could use those new samples to start testing the **correlation of the navel dwellers** with everything from subjects' places of birth to the **makeups of their immune systems**. Making such connections could help discover the **ties between bacterial hosts and their effects on individual’s health**. Researchers believe that **microbes are involved in everything from immune function to acne to skin softness**. The potential boon to medicine is enormous, so let the exploration begin (2).
 
-The individual can find one’s information by **selecting unique ID from a drop-down menu** and explore data by deep dive in their own results and also compare to other individuals. **This research is public and easily accessible**, so anyone can learn more about bellybutton biodiversity and explore this fascinating field. The interactive dashboard can be found in the link that follows:
+The individual can find one’s information by **selecting unique ID from a drop-down menu** and explore data by deep dive in their own results or compare the results to other individuals. **This research is also public and easily accessible**, so anyone can learn more about belly button biodiversity and explore this fascinating field. The interactive dashboard can be found in the link that follows:
 <br>
 <br>
 <p align="center">
