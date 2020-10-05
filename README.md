@@ -45,5 +45,5 @@ For this project I used:
 
 ## References
 - (1)	Module 12: Tools for Scraping. https://courses.bootcampspot.com/courses/200/pages/12-dot-0-3-tools-for-scraping?module_item_id=84244, Web 10 Oct 2020.
-- (2)	Shannon Fischer. “What Lives in Your Belly Button? Study Finds "Rain Forest" of Species” *The National Geographic.* 14 Nov, 2012. [Web]( https://www.nationalgeographic.com/news/2012/11/121114-belly-button-bacteria-science-health-dunn/). 3 Oct 2020.
+- (2)	Shannon Fischer. [“What Lives in Your Belly Button? Study Finds "Rain Forest" of Species”]( https://www.nationalgeographic.com/news/2012/11/121114-belly-button-bacteria-science-health-dunn/) *The National Geographic.* 14 Nov, 2012. Web. 3 Oct 2020.
 
