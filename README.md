@@ -36,8 +36,8 @@ The individual can find one’s information by **selecting unique ID from a drop
 Advantage of **JavaScript** and **Plotly.js** library is that the audience doesn’t have to have any additional programs installed on their computers in order to *“run the code”*. JavaScript enables to create visualizations that are attractive, accessible and interactive.
 For this project I used:
 
--	The data, stored in a json file. [samples.json]( samples.json).
--	The table is built by inserting **JavaScript** and **Plotly** into HTML page. [charts.js](charts.js).
+-	The data, stored in a json file [samples.json]( samples.json).
+-	The table is built by inserting **JavaScript** and **Plotly** into HTML page [charts.js](charts.js).
 -	**HTML** to build the webpage [index.html](index.html).
 -	**CSS** and **Bootstrap** to style the page [style.css](css/style.css)
 -	**Chrome Developer Tools** to test the code.
