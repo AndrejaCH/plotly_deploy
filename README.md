@@ -9,10 +9,10 @@ For this project I am creating an **interactive dashboard**, a creative visualiz
 The purpose of this research is to **gather, identify and analyze biological footprint of individuals’ navels**. 
 
 The research holds data of 153 individuals and their: 
-  -	unique and anonyms ID.
-  -	demographic information.
-  -	belly button scrubbing frequency.
-  -	belly button biological footprint.
+  -	Unique and anonyms ID.
+  -	Demographic information.
+  -	Belly button scrubbing frequency.
+  -	Belly button biological footprint.
   
 <p align="center">
 <img src="images/Petridish5.PNG" width="60%" height="60%">
