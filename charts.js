@@ -157,8 +157,9 @@ function buildCharts(sample) {
       type: "indicator",
       mode: "gauge+number",
       value: wFreq,
+      tickmode: 'linear',
       gauge: {
-        axis: { range: [null, 10] },
+        axis: { range: [null, 10], dtick: 2, tick0: 0 },
         bar: { color: "firebrick" },
         bgcolor: "white",
         borderwidth: 2,
