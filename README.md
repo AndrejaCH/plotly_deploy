@@ -20,7 +20,7 @@ The research holds data of 153 individuals and their:
 
 
 ## Background 
-One of the reasons for this research is to identify bacterial species that have the **ability to synthesize proteins that taste like beef**. So far laboratories had success in synthesizing meat from algae, fungi and microorganisms found on plat roots, and there is a good chance to find the right bacterial species on human bodies as well (1).
+One of the reasons for this research is to identify bacterial species that have the **ability to synthesize proteins that taste like beef**. So far laboratories had success in synthesizing meat from algae, fungi and microorganisms found on plant roots, and there is a good chance to find the right bacterial species on human bodies as well (1).
 
 Moreover, scientists could use those new samples to start testing the **correlation of the navel dwellers** with everything from subjects' places of birth to the **makeups of their immune systems**. Making such connections could help discover the **ties between bacterial hosts and their effects on individual’s health**. Researchers believe that **microbes are involved in everything from immune function to acne to skin softness**. The potential boon to medicine is enormous, so let the exploration begin (2).
 
