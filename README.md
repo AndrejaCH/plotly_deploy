@@ -6,7 +6,7 @@
 ## Purpose
 
 For this project I am creating an **interactive dashboard**, a creative visualization that enables communication by offering interactivity which can help the audience better understand the data and draw the same conclusions as researchers and data analysts. 
-The purpose of this research is to **gather, identify and analyze biological footprint of individuals’ navels**. 
+The purpose of this research is to **gather, identify and analyze the biological footprint of individuals’ navels**. 
 
 The research holds data of 153 individuals and their: 
   -	Unique and anonyms ID.
