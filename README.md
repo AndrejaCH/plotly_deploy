@@ -30,7 +30,7 @@ The interactive dashboard can be found in the link that follows and please feel 
 <br>
 <br>
 <p align="center">
-:microbe: <b>Belly Button Biodiversity Dashboard:</b> https://andrejach.github.io/plotly_deploy/ :microbe:
+:microbe: <b>Belly Button Biodiversity Interactive Dashboard:</b> https://andrejach.github.io/plotly_deploy/ :microbe:
 </p>
 <br>
 
