@@ -2,7 +2,7 @@
 
 *A JavaScript and Plotly.js interactive dashboard*
 
-## Overview of Project
+## Project Overview
 ## Purpose
 
 For this project I am creating an **interactive dashboard**, a creative visualization that enables communication by offering interactivity which can help the audience better understand the data and draw the same conclusions as researchers and data analysts. 
