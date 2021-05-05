@@ -24,13 +24,23 @@ One of the reasons for this research is to identify bacterial species that have 
 
 Moreover, scientists could use those new samples to start testing the **correlation of the navel dwellers** with everything from subjects' places of birth to the **makeups of their immune systems**. Making such connections could help discover the **ties between bacterial hosts and their effects on individual’s health**. Researchers believe that **microbes are involved in everything from immune function to acne to skin softness**. The potential boon to medicine is enormous, so let the exploration begin (2).
 
-The individual can find one’s information by **selecting unique ID from a drop-down menu** and explore data by deep dive in their own results or compare the results to other individuals. **This research is also public and easily accessible**, so anyone can learn more about belly button biodiversity and explore this fascinating field. The interactive dashboard can be found in the link that follows:
+The individual can find one’s information by **selecting unique ID from a drop-down menu** and explore data by deep dive in their own results or compare the results to other individuals. **This research is also public and easily accessible**, so anyone can learn more about belly button biodiversity and explore this fascinating field. 
+
+The interactive dashboard can be found in the link that follows and please feel free to try it on your own:
 <br>
 <br>
 <p align="center">
 :microbe: <b>Belly Button Biodiversity Dashboard:</b> https://andrejach.github.io/plotly_deploy/ :microbe:
 </p>
 <br>
+
+<p align="center">
+<img src="images/Animation.gif" width="60%" height="60%">
+</p>
+
+<p align="center">
+<i>Figure 1: Dashboard Preview</i>
+</p>
 
 ## Resources 
 Advantage of **JavaScript** and **Plotly.js** library is that the audience doesn’t have to have any additional programs installed on their computers in order to *“run the code”*. JavaScript enables to create visualizations that are attractive, accessible and interactive.
